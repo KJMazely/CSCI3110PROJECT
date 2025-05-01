@@ -128,3 +128,9 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 - Total Reservations
 - Total Revenue
 - Business Inquiries
+
+
+## Checklist
+
+1. **Open CSCI-3110 Project - Checklist.pdf**
+- Explains what checks the boxes for each part in the Final Project
