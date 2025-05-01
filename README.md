@@ -17,14 +17,13 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 Apply database migrations
 In Package Manager Console (Visual Studio) or terminal:
 
-- Add-Migration MakeDatabase
 - Update-Database
 
 2. **Create the Admin user**
 
-- Run the app and register a new account at /Identity/Account/Register using:
+- Run the app and Login to the admin account at /Identity/Account/Login using:
 - Email: admin@kmcars.net
-- Password: (your choice)
+- Password: Password1
 - This user is seeded into program.cs, so only admin@kmcars.net can access admin pages.
 
 3. **Create a normal user**
@@ -32,6 +31,7 @@ In Package Manager Console (Visual Studio) or terminal:
 - Run the app and register a new account at /Identity/Account/Register
 - Email: (your choice)
 - Password: (your choice)
+- This user should not have access to any admin pages.
 
 
 ## Running the App
@@ -42,8 +42,9 @@ In Package Manager Console (Visual Studio) or terminal:
 - NOTE: You must be logged into admin@kmcars.net
 - Click Create New Vehicle for each car you want to add:
 - NOTE: Image URL: must match a file in wwwroot/Vehicles (e.g. 2013Altima.png).
-- Provide all required details (make, model, year, size, class, base rate, etc.).
+- Provide all required details (make, model, year, size, class, etc.).
 - Create at least two vehicles with different sizes and classes.
+- Pictures for vehicles are located at wwwroot/Vehicles/
 
 2. **Customer: Browse & Filter Vehicles**
 
