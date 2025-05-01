@@ -1,0 +1,190 @@
+﻿@model IEnumerable<KMCSCI3110Project.Models.Vehicle>
+@{
+    ViewData["Title"] = "Available Vehicles";
+
+    var selMake = Context.Request.Query["make"].ToString();
+    var selModel = Context.Request.Query["model"].ToString();
+    var selClass = Context.Request.Query["vehicleClass"].ToString();
+    var selSize = Context.Request.Query["size"].ToString();
+    var selGearbox = Context.Request.Query["gearbox"].ToString();
+    var selYear = Context.Request.Query["year"].ToString();
+    var selMin = Context.Request.Query["minPrice"].ToString();
+    var selMax = Context.Request.Query["maxPrice"].ToString();
+    var selSort = Context.Request.Query["sortBy"].ToString();
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<button class="btn btn-outline-primary mb-3"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#filterCollapse"
+        aria-expanded="true">
+    Toggle Filters
+</button>
+
+<div class="collapse show mb-4" id="filterCollapse">
+    <form method="get" asp-action="Vehicles">
+        <div class="row g-2">
+            <!-- Make -->
+            <div class="col-md-2">
+                <select name="make" class="form-select">
+                    <option value="">All Makes</option>
+                    @foreach (var m in ViewBag.Makes as List<string>)
+                    {
+                        if (selMake == m)
+                        {
+                            <option selected value="@m">@m</option>
+                        }
+                        else
+                        {
+                            <option value="@m">@m</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Model -->
+            <div class="col-md-2">
+                <select name="model" class="form-select">
+                    <option value="">All Models</option>
+                    @foreach (var m in ViewBag.Models as List<string>)
+                    {
+                        if (selModel == m)
+                        {
+                            <option selected value="@m">@m</option>
+                        }
+                        else
+                        {
+                            <option value="@m">@m</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Class -->
+            <div class="col-md-2">
+                <select name="vehicleClass" class="form-select">
+                    <option value="">Class</option>
+                    @foreach (var c in ViewBag.Classes as string[])
+                    {
+                        if (selClass == c)
+                        {
+                            <option selected value="@c">@c</option>
+                        }
+                        else
+                        {
+                            <option value="@c">@c</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Size -->
+            <div class="col-md-2">
+                <select name="size" class="form-select">
+                    <option value="">Size</option>
+                    @foreach (var s in ViewBag.Sizes as string[])
+                    {
+                        if (selSize == s)
+                        {
+                            <option selected value="@s">@s</option>
+                        }
+                        else
+                        {
+                            <option value="@s">@s</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Gearbox -->
+            <div class="col-md-2">
+                <select name="gearbox" class="form-select">
+                    <option value="">Gearbox</option>
+                    @foreach (var g in ViewBag.Gearboxes as string[])
+                    {
+                        if (selGearbox == g)
+                        {
+                            <option selected value="@g">@g</option>
+                        }
+                        else
+                        {
+                            <option value="@g">@g</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Year -->
+            <div class="col-md-2">
+                <select name="year" class="form-select">
+                    <option value="">Year</option>
+                    @foreach (var y in ViewBag.Years as List<int>)
+                    {
+                        var ys = y.ToString();
+                        if (selYear == ys)
+                        {
+                            <option selected value="@ys">@y</option>
+                        }
+                        else
+                        {
+                            <option value="@ys">@y</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Price Range -->
+            <div class="col-md-2">
+                <input type="number" step="0.01" name="minPrice"
+                       value="@selMin"
+                       class="form-control"
+                       placeholder="Min Price" />
+            </div>
+            <div class="col-md-2">
+                <input type="number" step="0.01" name="maxPrice"
+                       value="@selMax"
+                       class="form-control"
+                       placeholder="Max Price" />
+            </div>
+            <!-- Sort By -->
+            <div class="col-md-3">
+                <select name="sortBy" class="form-select">
+                    @foreach (var opt in ViewBag.SortOptions as IEnumerable<SelectListItem>)
+                    {
+                        if (opt.Value == selSort)
+                        {
+                            <option selected value="@opt.Value">@opt.Text</option>
+                        }
+                        else
+                        {
+                            <option value="@opt.Value">@opt.Text</option>
+                        }
+                    }
+                </select>
+            </div>
+            <!-- Filter & Reset -->
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Filter</button>
+                <a asp-action="Vehicles" class="btn btn-secondary ms-2">Reset</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var vehicle in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <a asp-action="Details" asp-route-id="@vehicle.Id">
+                    <img src="@Url.Content("~/Vehicles/" + vehicle.ImageUrl)"
+                         class="card-img-top"
+                         style="object-fit:cover;height:200px;"
+                         alt="@vehicle.Make @vehicle.Model" />
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">@vehicle.Year @vehicle.Make @vehicle.Model</h5>
+                    <p class="card-text">
+                        <strong>Price:</strong> @vehicle.RentalCostPerDay.ToString("C")
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

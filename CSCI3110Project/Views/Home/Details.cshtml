@@ -1,0 +1,124 @@
+﻿@model KMCSCI3110Project.Models.Vehicle
+
+@{
+    var submitted = ViewBag.InquirySubmitted == true;
+    ViewData["Title"] = $"{Model.Year} {Model.Make} {Model.Model}";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- image & specs -->
+        <div class="col-md-6">
+            <img src="@Url.Content("~/Vehicles/" + Model.ImageUrl)"
+                 class="img-fluid mb-3"
+                 alt="@Model.Make @Model.Model" />
+
+            <h3>@Model.Year @Model.Make @Model.Model</h3>
+            <ul class="list-group mb-4">
+                <li class="list-group-item"><strong>Price/day:</strong> @Model.RentalCostPerDay.ToString("C")</li>
+                <li class="list-group-item"><strong>Seats:</strong> @Model.SeatAmount</li>
+                <li class="list-group-item"><strong>Doors:</strong> @Model.DoorCount</li>
+                <li class="list-group-item"><strong>MPG:</strong> @Model.MPG</li>
+                <li class="list-group-item"><strong>Cargo:</strong> @Model.CargoSize cu ft</li>
+                <li class="list-group-item"><strong>Class:</strong> @Model.VehicleClass</li>
+                <li class="list-group-item"><strong>Size:</strong> @Model.Size</li>
+                <li class="list-group-item"><strong>Gearbox:</strong> @Model.Gearbox</li>
+                <li class="list-group-item">
+                    <strong>Features:</strong> @string.Join(", ", Model.VehicleFeatures.Select(vf => vf.Feature.Name))
+                </li>
+            </ul>
+        </div>
+
+        <!-- Payment Estimator -->
+        <div class="col-md-6">
+            <div class="card p-4 mb-4" id="paymentEstimator" data-price="@Model.RentalCostPerDay">
+                <h4 class="card-title">Estimate Your Payment</h4>
+
+                <div class="mb-3">
+                    <label for="days" class="form-label">Number of days</label>
+                    <input id="days" type="number" class="form-control" placeholder="e.g. 3" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="ageBracket" class="form-label">Age bracket</label>
+                    <select id="ageBracket" class="form-select">
+                        <option value="1.8">21–25</option>
+                        <option value="1.2">26–31</option>
+                        <option value="1">32+</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Total estimate</label>
+                    <p id="estimate" class="fs-4 fw-bold">$0.00</p>
+                </div>
+
+                <button type="button" id="calculateBtn" class="btn btn-outline-primary w-100 mb-2">
+                    Calculate
+                </button>
+                <a asp-action="Reserve" asp-route-id="@Model.Id" class="btn btn-success w-100">
+                    Reserve
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <h4 id="contactHeading"
+                style="color:@(submitted ? "green" : "inherit")">
+                @(submitted
+                    ? "Thank you! We will contact you soon!"
+                    : "Want to buy this car? Contact Us!")
+            </h4>
+
+            <form asp-action="ContactUs" method="post" class="mb-5">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="vehicleId" value="@Model.Id" />
+
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Name</label>
+                    <input type="text"
+                           name="name"
+                           id="contactName"
+                           class="form-control"
+                           required
+                           disabled="@(submitted ? "disabled" : null)" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email</label>
+                    <input type="email"
+                           name="email"
+                           id="contactEmail"
+                           class="form-control"
+                           required
+                           disabled="@(submitted ? "disabled" : null)" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="contactInquiry" class="form-label">Inquiry</label>
+                    <textarea name="inquiryText"
+                              id="contactInquiry"
+                              class="form-control"
+                              rows="4"
+                              required
+                              disabled="@(submitted ? "disabled" : null)"></textarea>
+                </div>
+
+                <button type="submit"
+                        class="btn btn-primary"
+                        disabled="@(submitted ? "disabled" : null)">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/BusinessInquiry.js"></script>
+    <script src="~/js/PaymentEstimator.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}

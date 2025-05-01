@@ -1,0 +1,91 @@
+﻿@model KMCSCI3110Project.Models.Vehicle
+
+@{
+    ViewData["Title"] = "Reserve " + Model.Year + " " + Model.Make + " " + Model.Model;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- vehicle summary -->
+        <div class="col-md-6">
+            <img src="@Url.Content("~/Vehicles/" + Model.ImageUrl)"
+                 class="img-fluid mb-3"
+                 alt="@Model.Make @Model.Model" />
+            <h3>@Model.Year @Model.Make @Model.Model</h3>
+            <p><strong>Price/day:</strong> @Model.RentalCostPerDay.ToString("C")</p>
+        </div>
+
+        <!-- reservation form -->
+        <div class="col-md-6">
+            <div class="card p-4" id="reserveCard" data-price="@Model.RentalCostPerDay">
+                <h4 class="card-title">Choose Your Dates & Calculate</h4>
+                <form id="reserveForm" asp-action="ConfirmReservation" method="post">
+                    <input type="hidden" name="VehicleId" value="@Model.Id" />
+
+                    <div class="mb-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input id="startDate" name="StartDate" type="date" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="endDate" class="form-label">End Date</label>
+                        <input id="endDate" name="EndDate" type="date" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ageBracket" class="form-label">Age Bracket</nobr></label>
+                        <select id="ageBracket" name="AgeBracket" class="form-select" required>
+                            <option value="">-- Select Age --</option>
+                            <option value="1.8">21-25</option>
+                            <option value="1.2">26-31</option>
+                            <option value="1.0">32+</option>
+                        </select>
+                    </div>
+
+                    <button id="calcReservation" type="button" class="btn btn-primary w-100 mb-3">Calculate Total</button>
+
+                    <div class="mb-3">
+                        <label class="form-label">Total Estimate</label>
+                        <p id="reserveEstimate" class="fs-4 fw-bold">$0.00</p>
+                    </div>
+
+                    <!-- Confirm button disabled until calculation -->
+                    <button id="confirmBtn" type="submit" class="btn btn-success w-100" disabled>Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function() {
+          const card = document.getElementById('reserveCard');
+          const price = parseFloat(card.dataset.price) || 0;
+          const start = document.getElementById('startDate');
+          const end = document.getElementById('endDate');
+          const age = document.getElementById('ageBracket');
+          const estimateEl = document.getElementById('reserveEstimate');
+          const calcBtn = document.getElementById('calcReservation');
+          const confirmBtn = document.getElementById('confirmBtn');
+
+          calcBtn.addEventListener('click', () => {
+            const startDate = new Date(start.value);
+            const endDate = new Date(end.value);
+            if (!startDate || !endDate || endDate < startDate) {
+              alert('Please select valid start and end dates.');
+              return;
+            }
+            const dayCount = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
+            const multiplier = parseFloat(age.value);
+            if (!multiplier) {
+              alert('Please select your age bracket.');
+              return;
+            }
+            const total = price * dayCount * multiplier;
+            estimateEl.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            confirmBtn.disabled = false;
+          });
+        })();
+    </script>
+}

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<BusinessInquiry>
+@{
+    ViewData["Title"] = "Business Inquiries";
+}
+
+<div class="mb-3">
+    <button type="button"
+            class="btn btn-secondary"
+            onclick="location.href='@Url.Action("Index","Admin")'">
+        Back to Admin Panel
+    </button>
+</div>
+
+<h2>@ViewData["Title"]</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Vehicle</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Inquiry</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.Vehicle.Id</td>
+                <td>@b.Vehicle.Year @b.Vehicle.Make @b.Vehicle.Model</td>
+                <td>@b.Name</td>
+                <td>@b.Email</td>
+                <td>@b.Inquiry</td>
+                <td>
+                    <form asp-action="DeleteInquiry" method="post" style="display:inline">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@b.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Delete this inquiry?');">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,91 @@
+﻿@model KMCSCI3110Project.ViewModels.StatisticsViewModel
+
+@{
+    ViewData["Title"] = "Summary Statistics";
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<div class="row g-4">
+
+    <!-- Total Vehicles -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Total Vehicles</h5>
+                <p class="display-6">@Model.TotalVehicles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Available Vehicles -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Available</h5>
+                <p class="display-6">@Model.AvailableVehicles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unavailable Vehicles -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Unavailable</h5>
+                <p class="display-6">@Model.UnavailableVehicles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Average Rental Cost per Day -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Avg. Rental Cost</h5>
+                <p class="display-6">@Model.AverageRentalCost.ToString("C")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Reservations Made -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Total Reservations</h5>
+                <p class="display-6">@Model.TotalReservations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Revenue Earned -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Total Revenue</h5>
+                <p class="display-6">@Model.TotalRevenue.ToString("C")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Business Inquiries Received -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Business Inquiries</h5>
+                <p class="display-6">@Model.TotalInquiries</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Registered User Accounts -->
+    <div class="col-md-3">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <h5 class="card-title">Total Accounts</h5>
+                <p class="display-6">@Model.TotalAccounts</p>
+            </div>
+        </div>
+    </div>
+
+</div>

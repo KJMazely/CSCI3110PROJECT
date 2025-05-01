@@ -1,0 +1,19 @@
+﻿@model KMCSCI3110Project.Models.Reservation
+@{
+    ViewData["Title"] = "Cancel Reservation";
+}
+<h2>@ViewData["Title"]</h2>
+<p>Are you sure you want to cancel this reservation?</p>
+<dl class="row">
+    <dt class="col-sm-2">From</dt>
+    <dd class="col-sm-10">@Model.StartDate.ToShortDateString()</dd>
+    <dt class="col-sm-2">To</dt>
+    <dd class="col-sm-10">@Model.EndDate.ToShortDateString()</dd>
+    <dt class="col-sm-2">Cost</dt>
+    <dd class="col-sm-10">@Model.TotalCost.ToString("C")</dd>
+</dl>
+<form asp-action="Cancel" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Yes, Cancel</button>
+    <a asp-action="Index" class="btn btn-secondary">No, Go Back</a>
+</form>

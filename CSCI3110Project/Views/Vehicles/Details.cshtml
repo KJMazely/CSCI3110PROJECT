@@ -1,0 +1,58 @@
+﻿@model KMCSCI3110Project.Models.Vehicle
+
+@{
+    ViewData["Title"] = $"{Model.Year} {Model.Make} {Model.Model}";
+}
+
+<div class="mb-3">
+    <button type="button"
+            class="btn btn-secondary"
+            onclick="location.href='@Url.Action("Index","Vehicles")'">
+        Back to Vehicle Management
+    </button>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- image -->
+        <div class="col-md-6">
+            <img src="@Url.Content("~/Vehicles/" + Model.ImageUrl)"
+                 class="img-fluid mb-3"
+                 alt="@Model.Make @Model.Model" />
+        </div>
+
+        <!-- all vehicle attributes -->
+        <div class="col-md-6">
+            <ul class="list-group mb-4">
+                <li class="list-group-item"><strong>ID:</strong> @Model.Id</li>
+                <li class="list-group-item"><strong>Make:</strong> @Model.Make</li>
+                <li class="list-group-item"><strong>Model:</strong> @Model.Model</li>
+                <li class="list-group-item"><strong>Year:</strong> @Model.Year</li>
+                <li class="list-group-item"><strong>Price/day:</strong> @Model.RentalCostPerDay.ToString("C")</li>
+                <li class="list-group-item"><strong>Mileage:</strong> @Model.Mileage</li>
+                <li class="list-group-item"><strong>Image URL:</strong> @Model.ImageUrl</li>
+                <li class="list-group-item"><strong>Class:</strong> @Model.VehicleClass</li>
+                <li class="list-group-item"><strong>Size:</strong> @Model.Size</li>
+                <li class="list-group-item"><strong>Available:</strong> @(Model.IsAvailable ? "Yes" : "No")</li>
+                <li class="list-group-item"><strong>Seats:</strong> @Model.SeatAmount</li>
+                <li class="list-group-item"><strong>Doors:</strong> @Model.DoorCount</li>
+                <li class="list-group-item"><strong>MPG:</strong> @Model.MPG</li>
+                <li class="list-group-item"><strong>Cargo Size:</strong> @Model.CargoSize cu ft</li>
+                <li class="list-group-item"><strong>Gearbox:</strong> @Model.Gearbox</li>
+                <li class="list-group-item">
+                    <strong>Features:</strong>
+                    @if (Model.VehicleFeatures?.Any() ?? false)
+                    {
+                        @string.Join(", ",
+                                 Model.VehicleFeatures
+                                 .Select(vf => vf.Feature.Name))
+                    }
+                    else
+                    {
+                        <em>None</em>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

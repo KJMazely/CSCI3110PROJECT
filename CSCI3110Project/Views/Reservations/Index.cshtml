@@ -1,0 +1,44 @@
+﻿@using KMCSCI3110Project.Models.ViewModels
+
+@model IEnumerable<ReservationAdminViewModel>
+@{
+    ViewData["Title"] = "Manage Reservations";
+}
+
+<div class="mb-3">
+    <a asp-controller="Admin" asp-action="Index" class="btn btn-secondary">Back to Admin Panel</a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Vehicle</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Cost</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.CustomerEmail</td>
+                <td>@r.VehicleName</td>
+                <td>@r.StartDate.ToShortDateString()</td>
+                <td>@r.EndDate.ToShortDateString()</td>
+                <td>@r.TotalCost.ToString("C")</td>
+                <td>
+                    <form asp-action="Delete" asp-route-id="@r.ReservationId" method="post" style="display:inline">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-danger"
+                                onclick="return confirm('Delete this reservation?');">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

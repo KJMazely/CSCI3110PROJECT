@@ -1,0 +1,50 @@
+﻿@model IEnumerable<KMCSCI3110Project.Models.Vehicle>
+@{
+    ViewData["Title"] = "Vehicle Management";
+}
+
+<div class="mb-3">
+    <button type="button"
+            class="btn btn-secondary"
+            onclick="location.href='@Url.Action("Index","Admin")'">
+        Back to Admin Panel
+    </button>
+</div>
+
+<h2>@ViewData["Title"]</h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Vehicle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Available?</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var v in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Content("~/Vehicles/" + v.ImageUrl)" style="height:50px" />
+                </td>
+                <td>@v.Year</td>
+                <td>@v.Make</td>
+                <td>@v.Model</td>
+                <td>@v.RentalCostPerDay.ToString("C")</td>
+                <td>@(v.IsAvailable ? "Yes" : "No")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@v.Id" class="btn btn-primary btn-sm me-1">Details</a>
+                    <a asp-action="Edit" asp-route-id="@v.Id" class="btn btn-warning btn-sm me-1">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@v.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

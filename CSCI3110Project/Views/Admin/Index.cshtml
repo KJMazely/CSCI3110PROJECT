@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Admin Control Panel";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Control Panel</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Reservations Tile -->
+        <div class="col">
+            <a asp-controller="Reservations" asp-action="Index" class="text-decoration-none text-dark">
+                <div class="card shadow-sm" style="border-radius: 12px; transition: transform 0.2s;">
+                    <div class="card-body text-center">
+                        <i class="bi bi-people-fill" style="font-size: 48px;"></i>
+                        <h5 class="card-title mt-3">Reservations</h5>
+                        <p class="card-text">Manage all customer reservations.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Vehicle Management Tile -->
+        <div class="col">
+            <a asp-controller="Vehicles" asp-action="Index" class="text-decoration-none text-dark">
+                <div class="card shadow-sm" style="border-radius: 12px; transition: transform 0.2s;">
+                    <div class="card-body text-center">
+                        <i class="bi bi-car-front-fill" style="font-size: 48px;"></i>
+                        <h5 class="card-title mt-3">Vehicle Management</h5>
+                        <p class="card-text">View and update vehicle details.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Business Inquiries Tile -->
+        <div class="col">
+            <a asp-controller="Admin" asp-action="BusinessInquiries" class="text-decoration-none text-dark">
+                <div class="card shadow-sm" style="border-radius:12px;transition:0.2s;">
+                    <div class="card-body text-center">
+                        <i class="bi bi-chat-square-text-fill" style="font-size:48px;"></i>
+                        <h5 class="card-title mt-3">Business Inquiries</h5>
+                        <p class="card-text">View all contact‐us submissions.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card:hover {
+        transform: scale(1.05);
+    }
+</style>
