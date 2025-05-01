@@ -12,12 +12,13 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 
 ## Installation & Setup
 
-1. **Clone the repository**  
+1. **Download ZIP folder**  
 
-Apply database migrations
-In Package Manager Console (Visual Studio) or terminal:
-
-- Update-Database
+- Click on Code
+- Download ZIP
+- Extract Files
+- Open sln file and open Package Manager Console
+- Enter Update-Database in Package Manager Console
 
 2. **Create the Admin user**
 
@@ -42,17 +43,20 @@ In Package Manager Console (Visual Studio) or terminal:
 - NOTE: You must be logged into admin@kmcars.net
 - Click Add New Feature
 - Enter the name for your vehicle feature (Sunroof, Leather, Dual Zone A/C, etc.)
+- Enter at least two features
 - NOTE: Enter one feature at a time
 
-3. **Admin: Vehicle Management**
+
+2. **Admin: Vehicle Management**
    
 - Click Admin in the navbar, then select Vehicle Management.
 - NOTE: You must be logged into admin@kmcars.net
-- Click Create New Vehicle for each car you want to add:
+- Click Add New Vehicle for each car you want to add:
 - NOTE: Image URL: must match a file in wwwroot/Vehicles (e.g. 2013Altima.png).
 - Provide all required details (make, model, year, size, class, etc.).
 - Create at least two vehicles with different sizes and classes.
 - Pictures for vehicles are located at wwwroot/Vehicles/
+
 
 3. **Customer: Browse & Filter Vehicles**
 
@@ -60,6 +64,7 @@ In Package Manager Console (Visual Studio) or terminal:
 - Click Toggle Filter to reveal filter options:
 - Price range, size, class, passenger capacity, gearbox, cargo volume, etc.
 - Adjust filters and sort order to narrow your search.
+
 
 4. **Vehicle Details & Contact**
 
@@ -69,14 +74,30 @@ In Package Manager Console (Visual Studio) or terminal:
 - Contact Us form (for purchase inquiries)
 - Payment Estimator
 
-5. **Making a Reservation**
 
-- From Details, click Reserve.
+5. **Making a Business Inquiry**
+
+- Below the vehicle specs you'll see:
+- Contact Us form
+- Enter fields in form
+- Text will be changed to Thank you! We will contact you soon!
+- POST is sent to database
+- Go to admin panel and click Business Inquiries
+- You should see the inquiry you just made
+
+
+6. **Making a Reservation**
+
+- From Details, click Reserve under Calculate on Payment Estimator
 - On Home/Reserve, enter:
 - Start date
 - End date
 - Age bracket
 - The estimated cost appears. Click Confirm Reservation.
+
+
+7. **Confirming Reservation**
+   
 - On Home/Checkout, enter test payment info:
 - Card Number: 4242 4242 4242 4242
 - Expiration: 1234
@@ -84,22 +105,19 @@ In Package Manager Console (Visual Studio) or terminal:
 - Name: John Doe
 - Submission confirms the reservation.
 
-6. **Verifying & Cancelling Reservations**
+
+8. **Verifying & Cancelling Reservations**
 
 (Customer Side)
-- Click Vehicles — your reserved car should no longer appear (reset filters if needed).
+- Click Vehicles — your reserved car should no longer appear (reset filters).
 - Click Profile (next to Logout) to view and Cancel your reservation.
 
 (Admin side)
-- Click Admin > Reservations to see all bookings.
+- Click Admin panel and Reservations to see all bookings.
 - Click Delete on any reservation to remove it and free up the vehicle.
 
-7. **Business Inquiries**
-   
-- On any Details page, submit the Contact Us form.
-- As Admin, go to Admin > Business Inquiries to review submitted messages.
 
-8. **Statistics Dashboard**
+9. **Statistics Dashboard**
 
 - Click Home > Statistics to view:
 - Total Vehicles
