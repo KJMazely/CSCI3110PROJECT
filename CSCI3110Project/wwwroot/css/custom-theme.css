@@ -1,0 +1,67 @@
+﻿/* Custom Theme and colors for site */
+
+
+:root {
+    --bs-primary: #005f73;
+    --bs-secondary: #0a9396; 
+    --bs-success: #94d2bd;
+    --bs-info: #e9d8a6;
+    --bs-warning: #ee9b00; 
+    --bs-danger: #ae2012; 
+    --bs-light: #a5eef2;
+    --bs-dark: #001219; 
+    --bs-body-bg: #f0efeb; 
+    --bs-body-color: #343a40; 
+    --bs-font-family-base: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    font-family: var(--bs-font-family-base);
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--bs-dark) !important;
+}
+
+    .navbar .nav-link, .navbar-brand {
+        color: var(--bs-light) !important;
+    }
+
+        .navbar .nav-link:hover {
+            color: var(--bs-info) !important;
+        }
+
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    background-color: var(--bs-light);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+    .btn-primary:hover {
+        background-color: var(--bs-secondary);
+        border-color: var(--bs-secondary);
+    }
+
+a {
+    color: var(--bs-primary);
+}
+
+    a:hover {
+        color: var(--bs-secondary);
+        text-decoration: none;
+    }
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--bs-dark);
+}
