@@ -1,0 +1,337 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KMCSCI3110Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\KMCSCI3110Project.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Altima.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Altima.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013ES350.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013ES350.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Escape.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Escape.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Explorer.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Explorer.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013NV200.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013NV200.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Tacoma.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Tacoma.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Tundra.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Tundra.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2013Versa.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2013Versa.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2015Prius.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2015Prius.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2015Transit.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2015Transit.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2017Expedition.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2017Expedition.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2017Express2500.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2017Express2500.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2017Fit.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2017Fit.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\Vehicles\\2017Odyssey.png",
+      "PackagePath": "staticwebassets\\Vehicles\\2017Odyssey.png"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\css\\custom-theme.css",
+      "PackagePath": "staticwebassets\\css\\custom-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\js\\BusinessInquiry.js",
+      "PackagePath": "staticwebassets\\js\\BusinessInquiry.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\js\\FeatureAssign.js",
+      "PackagePath": "staticwebassets\\js\\FeatureAssign.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\js\\PaymentEstimator.js",
+      "PackagePath": "staticwebassets\\js\\PaymentEstimator.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ETSU\\source\\repos\\KMCSCI3110Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KMCSCI3110Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KMCSCI3110Project.props",
+      "PackagePath": "build\\KMCSCI3110Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KMCSCI3110Project.props",
+      "PackagePath": "buildMultiTargeting\\KMCSCI3110Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KMCSCI3110Project.props",
+      "PackagePath": "buildTransitive\\KMCSCI3110Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
