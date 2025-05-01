@@ -1,12 +1,15 @@
-﻿using KMCSCI3110Project.Models;
 using System.ComponentModel.DataAnnotations;
 
-public class Feature
+namespace KMCSCI3110Project.Models
 {
-    public int Id { get; set; }
-    [Required, StringLength(100)]
-    public string Name { get; set; }
+    public class Feature
+    {
+        public int Id { get; set; }
 
-    public ICollection<VehicleFeature> VehicleFeatures { get; set; }
-      = new List<VehicleFeature>();
+        [Required, StringLength(100)]
+        public string Name { get; set; }
+
+        public ICollection<VehicleFeature> VehicleFeatures { get; set; }
+            = new List<VehicleFeature>();
+    }
 }
