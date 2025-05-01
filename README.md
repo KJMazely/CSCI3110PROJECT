@@ -36,7 +36,15 @@ In Package Manager Console (Visual Studio) or terminal:
 
 ## Running the App
 
-1. **Admin: Vehicle Management**
+1. **Admin: Vehicle Feature Management**
+
+- Click Admin in the navbar, then select Feature Management.
+- NOTE: You must be logged into admin@kmcars.net
+- Click Add New Feature
+- Enter the name for your vehicle feature (Sunroof, Leather, Dual Zone A/C, etc.)
+- NOTE: Enter one feature at a time
+
+3. **Admin: Vehicle Management**
    
 - Click Admin in the navbar, then select Vehicle Management.
 - NOTE: You must be logged into admin@kmcars.net
@@ -46,14 +54,14 @@ In Package Manager Console (Visual Studio) or terminal:
 - Create at least two vehicles with different sizes and classes.
 - Pictures for vehicles are located at wwwroot/Vehicles/
 
-2. **Customer: Browse & Filter Vehicles**
+3. **Customer: Browse & Filter Vehicles**
 
 - Click Vehicles in the navbar.
 - Click Toggle Filter to reveal filter options:
 - Price range, size, class, passenger capacity, gearbox, cargo volume, etc.
 - Adjust filters and sort order to narrow your search.
 
-3. **Vehicle Details & Contact**
+4. **Vehicle Details & Contact**
 
 - Click on any vehicle card to go to Home/Details.
 - On the Details page you’ll see:
@@ -61,7 +69,7 @@ In Package Manager Console (Visual Studio) or terminal:
 - Contact Us form (for purchase inquiries)
 - Payment Estimator
 
-4. **Making a Reservation**
+5. **Making a Reservation**
 
 - From Details, click Reserve.
 - On Home/Reserve, enter:
@@ -76,7 +84,7 @@ In Package Manager Console (Visual Studio) or terminal:
 - Name: John Doe
 - Submission confirms the reservation.
 
-5. **Verifying & Cancelling Reservations**
+6. **Verifying & Cancelling Reservations**
 
 (Customer Side)
 - Click Vehicles — your reserved car should no longer appear (reset filters if needed).
@@ -86,12 +94,12 @@ In Package Manager Console (Visual Studio) or terminal:
 - Click Admin > Reservations to see all bookings.
 - Click Delete on any reservation to remove it and free up the vehicle.
 
-6. **Business Inquiries**
+7. **Business Inquiries**
    
 - On any Details page, submit the Contact Us form.
 - As Admin, go to Admin > Business Inquiries to review submitted messages.
 
-7. **Statistics Dashboard**
+8. **Statistics Dashboard**
 
 - Click Home > Statistics to view:
 - Total Vehicles
