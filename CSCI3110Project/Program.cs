@@ -24,27 +24,37 @@ var app = builder.Build();
 // Seed roles and ensure admin account has "Admin" role.
 using (var scope = app.Services.CreateScope())
 {
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var roleMgr = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
 
-    // List of roles you want in your app.
-    string[] roles = new[] { "Admin", "User" };
+    const string adminRole = "Admin";
+    const string adminEmail = "admin@kmcars.net";
 
-    // Create roles if they don't exist.
-    foreach (var role in roles)
+    // Create the Admin role if it doesn't exist
+    if (!await roleMgr.RoleExistsAsync(adminRole))
     {
-        if (!await roleManager.RoleExistsAsync(role))
-        {
-            await roleManager.CreateAsync(new IdentityRole(role));
-        }
+        await roleMgr.CreateAsync(new IdentityRole(adminRole));
     }
 
-    // Ensure the admin account has the Admin role.
-    var adminEmail = "admin@kmcars.net";
-    var adminUser = await userManager.FindByEmailAsync(adminEmail);
-    if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+    // Find the user by email
+    var adminUser = await userMgr.FindByEmailAsync(adminEmail);
+    if (adminUser != null)
     {
-        await userManager.AddToRoleAsync(adminUser, "Admin");
+        // Add the user to the Admin role if not already
+        if (!await userMgr.IsInRoleAsync(adminUser, adminRole))
+        {
+            await userMgr.AddToRoleAsync(adminUser, adminRole);
+        }
+    }
+    else
+    {
+        // Create the user if they don't exist
+        var newAdmin = new IdentityUser { UserName = adminEmail, Email = adminEmail, EmailConfirmed = true };
+        var result = await userMgr.CreateAsync(newAdmin, "Password1!");
+        if (result.Succeeded)
+        {
+            await userMgr.AddToRoleAsync(newAdmin, adminRole);
+        }
     }
 }
 
