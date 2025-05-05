@@ -129,6 +129,9 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 - Total Revenue
 - Business Inquiries
 
+## AI Disclosure
+
+- All code is of my own writing except for custom-theme.css, where I had ChatGPT 4o automatically create a color scheme for me based off the colors I gave it. This sped up the process of css as I am not experience in css coding.
 
 ## Checklist
 
