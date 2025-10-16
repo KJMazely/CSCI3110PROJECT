@@ -12,11 +12,11 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 
 ## Installation & Setup
 
-1. **Download ZIP folder**  
+1. **Release Page**  
 
-- Click on Code
-- Download ZIP
-- Extract Files
+- Head to the Release Page by clicking [here](https://github.com/KJMazely/CSCI3110PROJECT/releases/tag/Finished).
+- Scroll down to assets and download the ZIP file below
+- Extract the files
 - Open sln file and open Package Manager Console
 - Enter Update-Database in Package Manager Console
 
