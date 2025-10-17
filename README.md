@@ -24,7 +24,7 @@ A simple family-owned car rental web app built with ASP.NET Core MVC.
 
 - Run the app and Login to the admin account at /Identity/Account/Login using:
 - Email: admin@kmcars.net
-- Password: Password1
+- Password: Password1!
 - This user is seeded into program.cs, so only admin@kmcars.net can access admin pages.
 
 3. **Create a normal user**
